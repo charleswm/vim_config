@@ -9,9 +9,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'powerline/powerline'
 Plugin 'scrooloose/nerdtree'  
-Plugin 'davidhalter/jedi-vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
 "" all plugins have to be included before this line
 call vundle#end() 
 ""-----------------------------------------------------------------------------
