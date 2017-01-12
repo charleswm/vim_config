@@ -9,9 +9,11 @@ call vundle#begin()
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'powerline/powerline'
-Plugin 'scrooloose/nerdtree'  
+Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 "" all plugins have to be included before this line
 call vundle#end() 
@@ -29,7 +31,7 @@ syntax on    " Enable sytax processing
 colorscheme solarized8_dark
 
 "" Leader is comma
-let mapleader = ","  
+let mapleader = ","
 
 "" Turn off search highlight
 nnoremap <leader> <space> :nohlsearch<CR>
@@ -40,6 +42,9 @@ nnoremap ; :
 "" Open Nerdtree
 map <F2> :NERDTreeToggle<CR>
 
+"" CtrlP mapping
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 "" Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
