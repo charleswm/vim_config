@@ -34,7 +34,7 @@ colorscheme solarized8_dark
 let mapleader = ","
 
 "" Turn off search highlight
-nnoremap <leader> <space> :nohlsearch<CR>
+nnoremap <leader> <space> :nohlsearch <CR>
 
 "" Who needs semicolons?
 nnoremap ; :
@@ -45,6 +45,7 @@ map <F2> :NERDTreeToggle<CR>
 "" CtrlP mapping
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
 "" Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
@@ -96,7 +97,7 @@ function! XTermPasteBegin()
 endfunction
 
 "" Scrolling
-set scrolloff=10         "Start scrolling when we're 8 lines away from margins
+set scrolloff=10         "Start scrolling when we're n lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
@@ -111,7 +112,6 @@ set wildmenu
 set undolevels=700
 "" Command history length
 set history=700
-
 " Powerline setting
 set rtp+=/Users/cmorris/.local/lib/python3.5/site-packages/powerline/bindings/vim/
 set laststatus=2
