@@ -37,9 +37,6 @@ let mapleader = ","
 "" Turn off search highlight
 nnoremap <leader> <space> :nohlsearch <CR>
 
-"" Who needs semicolons?
-nnoremap ; :
-
 "" Open Nerdtree
 map <F2> :NERDTreeToggle<CR>
 
