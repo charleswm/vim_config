@@ -6,6 +6,8 @@
 set nocompatible "Always put this first
 
 call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'powerline/powerline'
 Plug 'scrooloose/nerdtree'
 Plug 'tmhedberg/SimpylFold'
@@ -29,7 +31,7 @@ let mapleader = ","
 colorscheme solarized8_dark
 
 "" Turn off search highlight
-nnoremap <leader> <space> :nohlsearch <CR>
+nnoremap <leader> <space> :nohl<CR>
 
 "" Open Nerdtree
 map <F2> :NERDTreeToggle<CR>
