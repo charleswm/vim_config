@@ -1,38 +1,32 @@
-""-----------------------------------------------------------------------------
-"" Initialize Vundle and plugins
-""-----------------------------------------------------------------------------
-set nocompatible
-filetype off
+"""""""""""""""
+"""""""""""""""
+"My vimrc!
+"""""""""""""""
+"""""""""""""""
+set nocompatible "Always put this first
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'gmarik/Vundle.vim'
-Plugin 'powerline/powerline'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-scripts/dbext.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Valloric/YouCompleteMe'
-"" all plugins have to be included before this line
-call vundle#end() 
-""-----------------------------------------------------------------------------
-"" Everything else goes after this line
-""-----------------------------------------------------------------------------
-
+call plug#begin('~/.vim/plugged')
+Plug 'powerline/powerline'
+Plug 'scrooloose/nerdtree'
+Plug 'tmhedberg/SimpylFold'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/dbext.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'Valloric/YouCompleteMe'
+Plug 'lifepillar/vim-solarized8'
+call plug#end()
+"
+"" Leader is comma
+let mapleader = ","
 ""Enable the mouse (for noobs)
 " set mouse=a
 
-filetype plugin indent on
-syntax on    " Enable sytax processing
+
 
 "" Theme
 colorscheme solarized8_dark
 
-"" Leader is comma
-let mapleader = ","
 
 "" Turn off search highlight
 nnoremap <leader> <space> :nohlsearch <CR>
