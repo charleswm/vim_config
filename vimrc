@@ -19,14 +19,14 @@ call plug#end()
 "
 "" Leader is comma
 let mapleader = ","
+
 ""Enable the mouse (for noobs)
+" set ttyfast
 " set mouse=a
-
-
+" set ttymouse=xterm2
 
 "" Theme
 colorscheme solarized8_dark
-
 
 "" Turn off search highlight
 nnoremap <leader> <space> :nohlsearch <CR>
@@ -105,7 +105,7 @@ set undolevels=700
 "" Command history length
 set history=700
 " Powerline setting
-set rtp+=/Users/cmorris/.local/lib/python3.5/site-packages/powerline/bindings/vim/
+set rtp+=~/.local/lib/python3.5/site-packages/powerline/bindings/vim/
 set laststatus=2
 set showtabline=1
 set noshowmode
