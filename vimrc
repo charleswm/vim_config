@@ -14,8 +14,8 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/dbext.vim'
-Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe'
+Plug 'Raimondi/delimitMate'
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
 "
@@ -101,7 +101,8 @@ set textwidth=79    " Line wrap (number of cols)
 set backspace=indent,eol,start    " Backspace behaviour
 set cursorline " Highlight current line
 set ruler    " Show row and column ruler information
-set wildmenu 
+set wildmenu
+set nofoldenable
 "" Number of Undos
 set undolevels=700
 "" Command history length
