@@ -12,11 +12,12 @@ Plug 'powerline/powerline'
 Plug 'scrooloose/nerdtree'
 Plug 'tmhedberg/SimpylFold'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'vim-scripts/dbext.vim'
+"Plug 'tpope/vim-surround'
+"Plug 'vim-scripts/dbext.vim'
 Plug 'Valloric/YouCompleteMe'
-Plug 'Raimondi/delimitMate'
+Plug 'Raimondi/delimitMate' "autocomplete parens/commas/etc
 Plug 'lifepillar/vim-solarized8'
+Plug 'jpalardy/vim-slime'
 call plug#end()
 "
 "" Leader is comma
@@ -33,6 +34,10 @@ colorscheme solarized8_dark
 "" Turn off search highlight
 nnoremap <leader> <space> :nohl<CR>
 
+"slime settings
+let g:slime_target = "tmux"
+let g:slime_python_ipython = 1
+let g:slime_paste_file = tempname()
 "" Open Nerdtree
 map <F2> :NERDTreeToggle<CR>
 
@@ -46,8 +51,8 @@ nnoremap k gk
 
 "" Windows
 "" Split navigations
-noremap <C-J> <C-W><C-J>
-noremap <C-K> <C-W><C-K>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 "" Open new split panes to right and bottom, which feels more natural
@@ -76,7 +81,7 @@ set nu
 set timeoutlen=100 ttimeoutlen=100
 
 "" make yank copy to the global system clipboard
-set clipboard=unnamed 
+set clipboard=unnamed
 
 set list listchars=tab:»·,trail:·,nbsp:·
 
