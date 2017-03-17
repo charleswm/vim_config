@@ -77,6 +77,10 @@ set smartcase    " Enable smart-case search
 "" Numbering
 set rnu
 set nu
+
+""No noise when error
+set visualbell
+
 "" Set timeout for escape key
 set timeoutlen=100 ttimeoutlen=100
 
@@ -113,7 +117,7 @@ set undolevels=700
 "" Command history length
 set history=700
 " Powerline setting
-set rtp+=~/.local/lib/python3.5/site-packages/powerline/bindings/vim/
+set rtp+=~/Applications/anaconda/lib/python3.5/site-packages/powerline/bindings/vim
 set laststatus=2
 set showtabline=1
 set noshowmode
